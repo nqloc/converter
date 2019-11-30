@@ -1,12 +1,11 @@
 > Web tool for converting JSON to XML and and vice versa 
+>
+> [Live Demo](https://nqloc.github.io/tools/converter/)  [Codepen](https://codepen.io/nqloc/pen/povzrRV)
 
-> [Live Demo](https://nqloc.github.io/tools/converter/)
+---
 
-> [Codepen](https://codepen.io/nqloc/pen/povzrRV)
-
-
-1. [JSON to XML](#json2xml)
-2. [XML to JSON](#xml2json)
+1. [JSON to XML](#json-to-xml)
+2. [XML to JSON](#xml-to-json)
 
 ## JSON to XML
 ### Input
