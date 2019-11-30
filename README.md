@@ -1,13 +1,15 @@
 > Web tool for converting JSON to XML and and vice versa 
->
+
 > [Live Demo](https://nqloc.github.io/tools/converter/)
->
+
 > [Codepen](https://codepen.io/nqloc/pen/povzrRV)
 
----
 
-# JSON to XML
-## Input
+1. [JSON to XML](#json2xml)
+2. [XML to JSON](#xml2json)
+
+## JSON to XML
+### Input
 ```
 {
     "employees": {
@@ -28,7 +30,7 @@
     }
 }
 ```
-## Output
+### Output
 ```
 <employees>
     <firstName>John</firstName>
@@ -44,8 +46,8 @@
 </employees>
 ```
 
-# XML to JSON
-## Input
+## XML to JSON
+### Input
 ```
 <employees>
     <firstName>John</firstName>
@@ -60,7 +62,7 @@
     <lastName>Jones</lastName>
 </employees>
 ```
-## Output
+### Output
 ```
 {
     "employees": {
