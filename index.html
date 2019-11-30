@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formatter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <div class="container" style="font-family: monospace;">
+        <h3>
+          <a href="javascript:void(0);" id="json2xml" onclick="switchParser('json2xml');">JSON 2 XML</a> | 
+          <a href="javascript:void(0);" id="xml2json" onclick="switchParser('xml2json');">XML 2 JSON</a>
+        </h3>
+        <div class="form-group">
+          <textarea class="form-control" rows="10" id="input" name="text" placeholder="Input" style="white-space: pre;"></textarea>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-outline-success" onclick="parseData()">Convert</button>
+          <button class="btn btn-outline-success" onclick="compressData()">Minify</button>
+          <button class="btn btn-outline-success" onclick="copyData('input')" data-toggle="tooltip" title="Copy to clipboard">Copy Input</button>
+          <button class="btn btn-outline-primary" onclick="clearInput()">Clear Input</button>
+          <button class="btn btn-outline-secondary" onclick="clearAll()">Clear All</button>
+        </div>
+        <div class="form-group">
+            <textarea readonly class="form-control" rows="10" id="output" name="text" placeholder="Output" style="white-space: pre;"></textarea>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-outline-success" onclick="copyData('output')" data-toggle="tooltip" title="Copy to clipboard">Copy Output</button>
+          <button class="btn btn-outline-primary" onclick="clearOutput()">Clear Output</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="xml2json.min.js"></script>
+    <script type="text/javascript" src="vkbeautify.min.js"></script>
+    <script type="text/javascript" src="converter.min.js"></script>
+</body>
+</html>
